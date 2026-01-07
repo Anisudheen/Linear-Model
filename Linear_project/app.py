@@ -5,9 +5,7 @@ import os
 
 @st.cache_resource
 def load_model():
-    base_dir = os.path.dirname(__file__)
-    model_path = os.path.join(base_dir, "Linearlinear_model.pkl")
-    model = joblib.load(model_path)
+    model = joblib.load("Linear_project/linear_model.pkl")
     return model
 
 
